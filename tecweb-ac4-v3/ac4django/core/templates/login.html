@@ -5,7 +5,7 @@
         <title>Login</title>
     </head>
     <body>
-        <form name="formulario" action="index.html" method="GET">
+        <form name="senha" action="" method="POST">{% csrf_token %}
             <table style="width:76%">
                 <tr>
                     <td><font face="Calibri"size="8"><b>Login</b></font></td><p></p>
@@ -14,7 +14,7 @@
                 <label>Usuário:</label><br/>
                 <input type="email" maxlength="30" size="30" name="email" placeholder="Digite seu usuário" required><p>
                 <label>Senha: </label><br/>
-                <input type="password" maxlength="30" size="30" name="senha" placeholder="Digite sua senha" required><p>
+                <input type="password" maxlength="30" size="30" name="text" placeholder="Digite sua senha" required><p>
                 <input type="submit" value="Enviar">
         </form>
     </body>
